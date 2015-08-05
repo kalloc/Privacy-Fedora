@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Privacy Fedora",
+  "version": "0.0.6",
+  "description": "Browse under the shade of your Fedora.", 
+  "icons": {
+      "128": "/img/icon128.png"
+   },
+   "options_ui": { 
+   "page": "/html/options.html", 
+   "chrome_style": true, 
+   "open_in_tab": false },
+  "permissions": 
+  ["privacy",
+	"contentSettings",
+    "history",
+    "storage"],
+  "background": {
+    "scripts": ["/js/background.js"],
+	"persistent": false
+  }
+}
