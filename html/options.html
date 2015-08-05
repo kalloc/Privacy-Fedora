@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Fedora 0.0.6</title>
+</head>
+<body>
+	<h4>Note to user</h4>
+	<p>Click 'Apply and restart' to apply these settings - even the default settings. The restart is for best measure.</p>
+	<p>If you've just done this, you may exit this menu.</p>
+	<h4>Chrome privacy settings</h4>
+    <p>
+        <label>
+            <input type="checkbox" id="errornavigate"> Disable navigation error web service.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="searchsuggest"> Disable search suggestions.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="prefetching"> Disable prefetching.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="safebrowsing"> Disable Google Safe Browsing.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="safebrowsingreporting"> Disable Google Safe Browsing extended reporting.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="spellcheck"> Disable spell checking web service.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="translation"> Disable translation service.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="hotword"> Disable Google Now Hotword voice search.
+        </label>
+    </p>
+	<h4>Chrome content settings</h4>
+	<p>
+	Geolocation:
+		<select id="location">
+			<option value="allow">Allow everywhere</option>
+			<option value="ask">Ask</option>
+			<option value="block">Block everywhere</option>
+		</select>
+	</p>
+    <p>
+        <h4>Hidden settings</h4>
+        <label>
+            <input type="checkbox" id="hyperlinkaudit"> Disable hyperlink auditing.
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" id="webrtc"> Disable multiple routes for WebRTC.
+        </label>
+    </p>
+    <h4>Additional functions</h4>
+    <p>
+        <label>
+            <input type="checkbox" id="history"> Disable history.
+        </label>
+    </p>
+
+    <div id="status"></div>
+    <button id="save">Apply and restart</button>
+    <script src="/js/options.js"></script>
+</body>
+</html>
